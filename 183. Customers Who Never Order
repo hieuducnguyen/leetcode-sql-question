@@ -9,4 +9,4 @@ WHERE
 		DISTINCT customerId
 	FROM
 		Orders
-)
+);
