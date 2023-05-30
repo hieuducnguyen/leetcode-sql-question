@@ -1,0 +1,8 @@
+SELECT
+	DISTINCT author_id AS id
+FROM
+	VIEWS v
+WHERE
+	v.author_id = v.viewer_id
+ORDER BY
+	id
