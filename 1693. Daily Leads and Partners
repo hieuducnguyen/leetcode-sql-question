@@ -1,0 +1,10 @@
+SELECT
+	sales.date_id,
+	sales.make_name,
+	count(DISTINCT sales.lead_id) AS unique_leads,
+	count(DISTINCT sales.partner_id) AS unique_partners
+FROM
+	DailySales sales
+GROUP BY
+	sales.date_id,
+	sales.make_name
